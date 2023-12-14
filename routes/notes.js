@@ -16,13 +16,13 @@ notes.get('/', (req, res) => {
 notes.post('/', (req, res) => {
     console.log(req.body);
   
-    const { noteTitle, noteText } = req.body;
+    const { title, text } = req.body;
   
     if (req.body) {
       const newNote = {
-        noteTitle,
-        noteText,
-        tip_id: uuidv4(),
+        title,
+        text,
+        id: uuidv4(),
       };
   
       readAndAppend(newNote, './db/db.json');
@@ -32,4 +32,21 @@ notes.post('/', (req, res) => {
     }
   });
 
-module.exports = router;
+notes.delete('/:id', (req, res) => {
+    console.log(req.params.id);
+
+    // filter out note we want to delete
+    readFromFile('./db/db.json').then((data) =>  {
+        const updatedNotes = JSON.parse(data).filter(note => note.id != req.params.id);
+
+    // want to write updatedNotes to file
+        writeToFile('./db/db.json', updatedNotes);
+        res.json("Note deleted successfully");
+
+    });
+
+    // want to write updatedNotes to file
+
+})
+
+module.exports = notes;
