@@ -17,7 +17,7 @@ This application uses an Express.js backend to create a Note Taking functionalit
 ![Screenshot of Deployed Application](/public/assets/images/WM-Express-JS-Note-Taker-Heroku-Deployed-Screenshot.png)
 
 ## Installation <a name="installation-instructions"></a>
-One loads the Heroku web application linked in this README above
+One loads the Heroku web application linked in this README above.
 
 ## Usage <a name="usage-instructions"></a>
 Type each note title and note description first in order to see Save and Clear Form buttons appear.
@@ -25,7 +25,7 @@ Type each note title and note description first in order to see Save and Clear F
 ## Credits <a name="credits"></a>
 The starter code was from the Develop folder that was housed in the Challenge folder within the Module 11-Express folder of the [UCSD-VIRT-FSF-PT-09-2023-U-LOLC GitLab repository](https://git.bootcampcontent.com/University-of-California---San-Diego/UCSD-VIRT-FSF-PT-09-2023-U-LOLC). User mvpache (Instructor Michael Pacheco) made the most recent updates to this GitLab repository.
 
-I had a tutoring session with Mila Hose on 12/14 and Mila helped me to get the Delete functionality working after cleaning up my file organization. I had a notes.js file in the frontend that was able to be deleted because index.js contained the logic that would have been housed there.
+I had a tutoring session with Mila Hose on 12/14 and Mila helped me to get the Delete functionality working after cleaning up my file organization. I had a notes.js file in the frontend that was able to be deleted because index.js contained the logic that would have been housed there. Thanks Mila!
 
 ## Contributing <a name="contribution-guidelines"></a>
 Be respectful and please reach out with any questions/concerns.
